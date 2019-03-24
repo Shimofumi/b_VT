@@ -1,0 +1,82 @@
+spot spot1
+{
+	name	= 竜窟
+	image	= doragonkutsu
+	x	= 200
+	y	= 200
+
+	w	= 32
+	h	= 32
+
+	map	= 
+	castle_battle = off
+		//省略時OFF,攻城戦
+	//yorozu = 
+		//攻城戦時に打って出る？基底クラス, 基底クラス,
+	//limit
+		//省略時はcontext構造体のbtl_limitとなる、攻城戦はbtl_limit_c
+	bgm	= onkai2
+		//midは拡張子無し、mp3,oggは拡張子込みで指定
+	volume	= 100
+	gain	= 10
+		//領地収入関連、経済値
+	//castle = 
+		//城壁値
+	//capacity
+		//部隊駐留数、省略時はcontext構造体のspot_capacity
+	//monster
+		//中立時に登場するモンスター wolf*3, elfみたいに
+	merce	= wyrm, hebi
+		//この領地で雇用できるユニット
+	member	= wyrmofpower, hebi, wyrm
+		//この領地の初期配備ユニット、部隊長を列挙
+	//dungeon
+	no_fome	= on
+		//省略時はOFF、ONにするとシナリオ開始時の放浪人材の出発点にならない
+	//no_raise
+		//省略時はOFF、ONにすると全人材がここで旗揚げしない
+	//castle_lot
+		//曲輪仕様における領域半径ピクセルを設定
+}
+
+spot spot2
+{
+	name	= 妹の館
+	image	= dragonkutsu
+	x	= 400
+	y	= 300
+
+	w	= 32
+	h	= 32
+
+	map	= 
+	castle_battle = off
+		//省略時OFF,攻城戦
+	//yorozu = 
+		//攻城戦時に打って出る？基底クラス, 基底クラス,
+	//limit
+		//省略時はcontext構造体のbtl_limitとなる、攻城戦はbtl_limit_c
+	bgm	= onkai2
+		//midは拡張子無し、mp3,oggは拡張子込みで指定
+	volume	= 100
+	gain	= 10
+		//領地収入関連、経済値
+	//castle = 
+		//城壁値
+	//capacity
+		//部隊駐留数、省略時はcontext構造体のspot_capacity
+	//monster
+		//中立時に登場するモンスター wolf*3, elfみたいに
+	merce	= wyrm, hebi
+		//この領地で雇用できるユニット
+	member	= imouto, hebi
+		//この領地の初期配備ユニット、部隊長を列挙
+	//dungeon
+	no_fome	= on
+		//省略時はOFF、ONにするとシナリオ開始時の放浪人材の出発点にならない
+	//no_raise
+		//省略時はOFF、ONにすると全人材がここで旗揚げしない
+	//castle_lot
+		//曲輪仕様における領域半径ピクセルを設定
+}
+

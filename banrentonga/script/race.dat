@@ -1,0 +1,15 @@
+race ningen
+{
+	name     = lŠÔ
+	brave    = 90
+	movetype = normal
+	align    = 50
+}
+race dragon
+{
+	name	= ƒhƒ‰ƒSƒ“
+	brave    = 99
+	movetype = normal
+	align    = 50
+}
+

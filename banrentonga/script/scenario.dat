@@ -1,0 +1,43 @@
+//spot（領地）、power（勢力）、scenario（各シナリオ）は設定が三か所にまたがるので
+
+
+scenario sc1
+{
+	sortkey = 1	
+	end_text1 = ボスは倒された！Qy＠！！
+	//ＥＶここから　
+	offset = 探索
+		//ボタン名を列挙する事でメニューウィンドウのボタンを消せます。ﾀｰﾝが半角である事に注意してください。
+//	world = 
+		//任意のevent構造体を指定する、新ﾀｰﾝ開始時と各勢力の開始時戦闘終了時に読み込まれます。
+//	fight = fight_event01
+		//任意のevent構造体を指定する（戦闘開始前イベントの発生）未作成
+	default_ending = off
+		//offにすると標準ゲームクリア判定（全勢力が敵国と接してないとクリア）をしなくなります。
+//	party = on
+		//onにすると人材プレイ時に「同じ勢力にいる戦功値が自分以下の同僚ユニット」を雇用出来る
+	
+	//諸設定
+	base_level = 4
+	monster_level = 10
+	training_up = 3
+	
+	name = bandrentonga
+	locate_x = 10
+	locate_y = 20
+
+	text =
+前勝利者達の宴$
+;
+
+
+	nozone        = off
+	power         = p1, p2;
+	spot		= spot1, spot2;
+	showSpot(spot1)
+	showSpot(spot2)
+	linkSpot(spot1, spot2)
+}
+
+
+

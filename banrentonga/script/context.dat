@@ -1,0 +1,11 @@
+context
+{
+	///
+
+	title_name = バンレントンガ Ver0.01
+	mode_easy = nozone, sdown, force_fire, dead2
+	mode_easy_text = ぎゃおー。$プレイヤーと敵勢力は同じ条件で戦います。
+
+	face_colorkey = 0, 0, 255
+
+}

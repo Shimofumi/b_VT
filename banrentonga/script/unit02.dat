@@ -1,0 +1,99 @@
+//非人材ユニット
+
+
+unit wyrm
+{
+	name	= ワイアーム
+		//名前
+
+//	fkey	= fkeywyrm
+    		//fkey 基底クラス。クラスの系列を決めます。fkey未記述のクラスはsamecall出来ません。
+	unique	= on
+		//ユニークがonなら同族雇用samecallができない、ただしCPUはlv1雇用する？
+	same_friend = off
+		//offにすると同種族同クラスの雇用が出来なくなる（friendで別途指定してれば可能）
+	same_call = off
+		//多用されるsamecallのon/off省略時はon
+	price	= 100
+		//雇用費
+	cost	= 2000
+		//ターン毎の維持費。負の値にすると逆に増えて「財政力」となります。
+	hasexp	= 6000
+		//自分を攻撃した敵の獲得経験値を決める基準値。これにレベルを掛けます。
+	medical = 100
+		//治療費、これにレベルをかけたものが治療費
+	hp	= 12321
+	mp	= 3750
+	attack	= 95
+	defense	= 111
+	magic	= 95
+	magdef	= 1
+	speed	= 200
+	dext	= 50
+	move	= 160
+	hprec	= 11
+	mprec	= 2
+	exp	= 200
+	exp_mul	= 133
+			//レベルアップのための必要経験値の設定
+	heal_max = 100
+	movetype = hikou
+	multi	= 5,hp,mp,5,attack,3,defense,3,magic,magdefmdext,3,hprec
+		//レベルアップ時の能力値の上昇率。基本能力値×（数値）％ずつ上昇する。
+	image	= unit_wyrm
+		//どうしようね、数字で管理か固有名称で行くか
+	consti	= tairyu*2, gun*6
+	line	= front
+		//front/back
+	attack_max = 150
+	defense_max = 150
+	magic_max = 150
+	magdef_max = 150
+	speed_max = 200
+	dext_max = 150
+	no_knoxk = on
+}
+
+unit hebi
+{
+//	fkey    = hebi
+	name    = へび
+	class	= class_hebi
+	unique = on
+	same_friend = off
+	same_call = off
+//	fkey    = snake
+	price   = 100
+	cost    = -1800
+	hasexp  = 3000
+	medical = 100
+	hp      = 165
+	mp      = 10
+	attack  = 10
+	defense = 7
+	magic   = 4
+	magdef  = 1
+	speed   = 9
+	dext    = 50
+	move    = 180
+	hprec   = 21
+	mprec   = 1
+	exp     = 200
+	exp_mul = 133
+	heal_max = 200
+	movetype = kihei
+	multi = 12,hp,7,mp,9,attack,7,defense,5,magic,magdef,dext,3,hprec
+	image   = unit505
+	consti = slash*7, taiho*8, taiuma*2, bomb*3, magic*7, arrow*8, gun*8, flame*7, wind*7, shine*8, dark*8, lance*8, poi*10, para*4, conf*10, fear*3, death*10
+	//属性はでたらめにいれても起動した、
+	line = back
+	attack_max = 150
+	defense_max = 150
+	magic_max = 150
+	magdef_max = 150
+	speed_max = 150
+	dext_max = 150
+	no_knock = on
+	escape_range = 620
+}
+

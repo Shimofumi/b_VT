@@ -1,0 +1,123 @@
+//マスター
+unit wyrmofpower
+{
+	flag	= Flag2
+	name	= パワーワイアーム
+	help	= 星をも砕く
+	level	= 90
+	talent	= on
+	sex	= neuter
+	race	= dragon
+	class	= class_wyrm
+//	image	= unitwyrmofpower
+	dead	= グアァァァ！
+	retreat	= オオオォォォ！
+	join	= なんとパワーワイアームが仲間になった！
+	face	= facewyrmofpower
+	level_max = 100
+	voice_type = powerwyrm
+	member	= hebi*2
+	price	= 50000
+	cost	= 10000
+	medical	= 0
+	hasexp	= 3000
+	hp	= 30000
+	mp	= 1600
+	attack	= 250
+	defense	= 100
+	magic	= 95
+	magdef	= 1
+	speed	= 60
+	dext	= 50
+	move	= 200
+	hprec	= 68
+	mprec	= 3
+	exp	= 1000
+	exp_mul	= 133
+	heal_max = 2000
+	summon_max = 5
+	no_knock = 30
+	//yabo
+	//kosen
+	brave	= 98
+//	brave	= on*98
+	//align
+	//enemy
+	//multi
+		//成長率
+	//consti
+		//耐性
+	loyal	= wyrmofpower
+		//主君。これが設定されてる放浪ユニットは主君が生存して別勢力にいる場合は雇用不可能となる。
+		//また、主君に設定したマスターの勢力に所属している場合、身分が宿将となる。
+		//自分の名前を指定した場合はマスター格ユニットとなり陪臣にならない
+	alive_per = 10
+		//生存率
+	//delskill
+	skill	= kinsetsu_01
+	//learn	=
+	escape_range = -1
+	lost_corpse = 50
+}
+
+
+unit imouto
+{
+	flag	= Flag001
+	name	= 妹
+	help	= 銀河万象のシスター
+	level	= 10
+	talent	= on
+	sex	= neuter
+	race	= ningen
+//	class	= imouto
+		//classとunitの違いがわからない、クラスチェンジ未実装なのでコメントアウト
+	dead	= きゃあー
+	retreat	= おにいちゃーん！！
+	join	= なんと空から妹が降ってきた！
+	face	= facewyrmofpower
+	level_max = 100
+	voice_type = powerwyrm
+	member	= hebi*2
+	price	= 50000
+	cost	= 10000
+	medical	= 0
+	hasexp	= 3000
+	hp	= 30000
+	mp	= 1600
+	attack	= 250
+	defense	= 100
+	magic	= 95
+	magdef	= 1
+	speed	= 60
+	dext	= 50
+	move	= 200
+	hprec	= 68
+	mprec	= 3
+	exp	= 1000
+	exp_mul	= 133
+	heal_max = 2000
+	summon_max = 5
+	no_knock = 30
+	//yabo
+	//kosen
+	brave	= 98
+//	brave	= on*98
+	//align
+	//enemy
+	//multi
+		//成長率
+	//consti
+		//耐性
+	loyal	= imouto
+	alive_per = 95
+	//delskill
+	skill	= kinsetsu_01
+	//learn	=
+	escape_range = -1
+//	lost_corpse = 50
+}
+
+
+
+	

@@ -1,0 +1,50 @@
+power p1
+{
+	enable_talent = off
+	name	= 万色どらごん会
+	//diplo =
+	money	= 10
+	flag	= flag001
+	master	= wyrmofpower
+	home	= spot1
+	fix	= hold
+		//領内の部隊を動かさず侵攻しない
+//	staff	= fkeywyrm
+//	merce	= wyrm*1
+	base_merits	= 1000
+	head	= 強い方の黄色D
+	diff	= ■□□□□
+	text	= 
+駅チカ街チカ堅牢な72F相当の良物件！（要火冷電酸二重耐性））$
+あなたはこのモンスターを倒したいという強い欲望を感じている...;
+
+	member	= spot1
+		//開始時の領地。
+	bgm	= onkai2
+	volume	= 100
+}
+
+power p2
+{
+	enable_talent = off
+	name	= 国際お兄ちゃん協会
+	//diplo =
+	money	= 1000
+	flag	= flag001
+	master	= imouto
+	home	= spot2
+//	staff	= fkeywyrm
+//	merce	= wyrm*1
+	base_merits	= 1000
+	head	= International Sister's Association
+	diff	= ■■■■■
+	text	=
+お兄ちゃん？ お兄ちゃ～ん　お兄ちゃん！
+;
+
+	member	= spot2
+		//開始時の領地。
+	bgm	= onkai2
+	volume	= 100
+}
+
